@@ -1,1 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>University Chatbot</title>
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <h1>University Chatbot</h1>
+  </header>
+
+  <!-- Main Section -->
+  <div class="main-container">
+    <!-- Left Content -->
+    <div class="welcome-content">
+      <h2>Welcome to dhanalakshmi srinivasan University</h2>
+      <p>Your smart assistant to answer all queries about admissions, events, and courses.</p>
+    </div>
+
+    <!-- Chatbot Container -->
+    <div class="chatbot-container">
+      <div class="chat-header">
+        <h2>Ask Your Questions</h2>
+      </div>
+      <div class="chat-body" id="chat-body">
+        <!-- Default Bot Message -->
+        <div class="bot-message">Hello! How can I assist you today?</div>
+      </div>
+      <div class="chat-actions">
+        <button onclick="sendQuickMessage('Admission Timelines')">Admission Timelines</button>
+        <button onclick="sendQuickMessage('Course Details')">Course Details</button>
+        <button onclick="sendQuickMessage('Event Schedules')">Event Schedules</button>
+      </div>
+      <div class="chat-footer">
+        <input type="text" id="user-input" placeholder="Type your message here...">
+        <button onclick="sendMessage()">Send</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 dhanalakshmi srinivasa University. All Rights Reserved.</p>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
 
